@@ -12,7 +12,7 @@ html{
 
 
 nav img{
-    width: 44px;
+    width: 80px;
     background-color: rgba(20,86,174,1);
     margin-left: 26px;
 }
@@ -53,7 +53,7 @@ button{
     border-width: 3px;
     border-color: skyblue;
     border-radius: 20px;
-    margin-left: 480px;
+    margin-left: 450px;
     cursor: pointer;
 }
 
@@ -90,18 +90,61 @@ P{
 }
 
 .column{
-    float: left;
-    width: 33.33%;
+    display: flex;
+    justify-content: center;
+}
+
+.picture img{
+    width: 290px;
+    margin-top: 110px;
     padding: 5px;
+    margin-bottom: 0;
+}
+
+.picture{
+    margin-left: 190px;
+    position: absolute;
+    text-align: center;
+}
+
+.container_text{
+    position: relative;
+}
+
+.column1{
+    justify-content: center;
+    display: flex;
+    margin-top: 200px;
+}
+
+.title1{
+    position: absolute;
+    top: 0;
+    color: aqua;
+    padding: 260px;
+    padding-left: 10px;
 }
 
 
-img{
-    width: 330px;
-    padding: 5px;
-    /* display: flex;
-    justify-content: center; */
+.title1 h4{
+    font-size: 15px;
+    padding: 0;
+    content: normal;
+    width: 0;
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
