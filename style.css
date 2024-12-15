@@ -7,55 +7,54 @@ body{
 html{
     scroll-behavior: smooth;
 }
+/*nav bar  */
 
-/* navbar */
-
-
-nav img{
-    width: 80px;
-    background-color: rgba(20,86,174,1);
-    margin-left: 26px;
+.navbar-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10%;
 }
-
+.nav-links ul {
+    display: flex;
+    gap: 10%;
+}
 ul{
-    display: flex;
-    align-items: center;
-    padding-left: 200px;
-    list-style-type: none;
+ list-style: none;  
 }
 
-li a{
-    flex: 1;
+.nav-image img{
+    height:60px ;
+    width: 60px;
     display: flex;
     align-items: center;
-    width: 200px;
-    color: white;
+}
+
+.nav-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+a{
+    color: #000000;
     text-decoration: none;
-    cursor: pointer;
 }
+.nav-connect{
+padding:10px 30px;
+color: #ffffff;
+background-color: blueviolet;
+border-radius: 10px;
+border: 5px solid blue;
 
-nav{
-    margin-top: 0;
-    display: flex;
-    align-items: center;
-    background: linear-gradient(90deg, rgba(20,86,174,1) 13%, rgba(0,53,103,1) 63%);
 }
+/* navbar end */
 
 
-
-button{
-    height: 20px;
-    width: 90px;
-    font-size: small;
-    height: 27px;
-    background: linear-gradient(90deg,rgb(0, 52, 99)  13%, rgb(8, 66, 146) 67%); 
-    color: white;
-    border-width: 3px;
-    border-color: skyblue;
-    border-radius: 20px;
-    margin-left: 450px;
-    cursor: pointer;
-}
 
 
 
@@ -65,7 +64,7 @@ button{
     background-color:rgba(17,68,134,1);
 }
 
-h1{
+.blog-head{
     margin: 0;
     color: white;
     padding-top: 50px;
@@ -75,8 +74,7 @@ h1{
     font-style: normal;
 }
 
-
-P{
+.blog-paragraph{
     padding-left: 300px;
     padding-right: 300px;
     padding-bottom: 80px;
@@ -90,21 +88,24 @@ P{
 }
 
 .column{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    /* display: flex; */
+    gap: 5%;
 }
 
 .picture img{
-    width: 290px;
-    margin-top: 110px;
+    height: auto;
+    width: 100%;
+   
     padding: 5px;
     margin-bottom: 0;
 }
-
+.container_text1 img{
+    width: 100%;
+}
 .picture{
-    margin-left: 190px;
-    position: absolute;
-    text-align: center;
+margin: 5% 10%;
+
 }
 
 .container_text{
@@ -116,14 +117,29 @@ P{
     display: flex;
     margin-top: 200px;
 }
-
 .title1{
+    position: relative;
+    top: -9%;
+    left: 5%;
+    background-color: aqua;
+    width: 50%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+justify-content: center;
+
+}
+.title1 h4{
+    color: #000000;
+}
+
+/* .title1{
     position: absolute;
     top: 0;
     color: aqua;
     padding: 260px;
     padding-left: 10px;
-}
+} */
 
 
 .title1 h4{
