@@ -10,15 +10,16 @@ html{
 /*nav bar  */
 
 .navbar-content{
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10%;
     background: linear-gradient(90deg, rgba(20,86,174,1) 13%, rgba(0,53,103,1) 63%);
 }
-.nav-links ul {
+.nav-links ul{
     display: flex;
     gap: 20%;
 }
+
 ul{
     list-style: none;  
 }
@@ -36,6 +37,7 @@ ul{
     justify-content: center;
     background-color: rgba(20,86,174,1) 13%;
 }
+
 .nav-button{
     display: flex;
     justify-content: center;
@@ -51,13 +53,22 @@ padding:5px 36px;
 font-size: 16px;
 color: #ffffff;
 border-radius: 10px;
-background: linear-gradient(90deg,rgb(0, 52, 99)  13%, rgb(8, 66, 146) 67%); 
-border: 2px solid skyblue;;
-
+background: linear-gradient(90deg,rgb(0, 52, 99) 13%, rgb(8, 66, 146) 67%); 
+border: 2px solid skyblue;
+cursor: pointer;
 }
+
+.nav-connect:hover{
+    background: rgb(8, 66, 146);
+}
+.nav-connect:active{
+    background: linear-gradient(90deg,rgb(7, 75, 134) 13%, rgb(7, 81, 185) 67%); 
+}
+
+
+
+
 /* navbar end */
-
-
 
 
 
@@ -170,7 +181,16 @@ margin: 5% 10%;
     color: #000000;
 }
 
+/* previous & next  */
+.previous{
+    color: #000000;
+    background-color: #ffffff;
+    
+}
 
+.next{
+    color: #000000;
+}
 
 
 
